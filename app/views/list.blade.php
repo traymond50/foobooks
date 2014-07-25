@@ -16,6 +16,15 @@
 
 	<br><br>
 
+	@if(!empty(trim($query)))
+		<p>You searched for <strong>{{{ $query }}}</strong></p>
+
+		@if(count($books) == 0)
+			<p>No matches found</p>
+		@endif
+
+	@endif
+
 	@foreach($books as $title => $book)
 
 		<section>
@@ -35,9 +44,11 @@
 				Tags:
 				<br>
 				@foreach($book['tags'] as $tag)
-						{{$tag}}<br>
+						<em>{{$tag}}</em><br>
 				@endforeach
 			</p>
+
+			<a href='{{ $book['cover']}}'>Purchase this book...</a>
 
 		</section>
 	
