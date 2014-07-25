@@ -1,0 +1,26 @@
+body {
+	padding:20px;
+}
+
+.logo {
+	width:500px;
+	margin-bottom:20px;
+	display:block;
+}
+
+section {
+	min-height:200px;
+}
+
+h2 {
+	margin:0;
+}
+
+.cover {
+	float:left;
+	margin-right:10px;
+}
+
+a:link, a:visited, a:active, a:hover {
+	text-decoration:underline;
+}
