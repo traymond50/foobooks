@@ -13,11 +13,11 @@
 
 	<br><br>
 
-	{{ Form::open(array('url' => '/list', 'method' => 'GET'))}}
+	{{ Form::open(array('url' => '/list', 'method' => 'GET')) }}
 
 		{{ Form::label('query','Search for a book:') }} &nbsp;
-		{{ Form::text('query')}} &nbsp;
-		{{ Form::submit('Search!')}}
+		{{ Form::text('query') }} &nbsp;
+		{{ Form::submit('Search!') }}
 
-	{{ Form::close()}}
+	{{ Form::close() }}
 @stop

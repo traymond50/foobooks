@@ -15,11 +15,20 @@ class CreateBooksTable extends Migration {
 		//
 		Schema::create('books', function($table)
 		{
+			#AI Primary key
 			$table->increments('id');
+			
+			#Adds created at and updated_at columns
+			$table->timestamps();
+
+
 			$table->string('title');
 			$table->string('author');
 			$table->string('cover');
 			$table->integer('published_date');
+			$table->string('purchase_link');
+			$table->integer('user_id');
+			$table->string('foobar');
 		});
 	}
 

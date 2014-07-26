@@ -30,22 +30,18 @@
 		<section>
 			<img class='cover' src='{{ $book['cover'] }}'>
 
-			<h2>{{ $title}}</h2>
+			<h2>{{ $book['title'] }}</h2>
 
 			Author: {{ $book['author']}}
 
 			<p>
 
-			Published: {{ $book['published']}}
+			Published: {{ $book['published_date'] }}
 
 			</p>
 
 			<p>
-				Tags:
-				<br>
-				@foreach($book['tags'] as $tag)
-						<em>{{$tag}}</em><br>
-				@endforeach
+
 			</p>
 
 			<a href='{{ $book['cover']}}'>Purchase this book...</a>
