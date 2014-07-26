@@ -36,7 +36,7 @@
 
 			<p>
 
-			Published: {{ $book['published_date'] }}
+			Published: {{ $book['published'] }}
 
 			</p>
 

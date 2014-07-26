@@ -11,7 +11,7 @@
 
 		Author: {{ Form::text('author') }} <br>
 		Title: {{ Form::text('title')}} <br>
-		Published (YYYY): {{ Form::text('published_date') }} <br>
+		Published (YYYY): {{ Form::text('published') }} <br>
 		Cover URL:  {{ Form::text('cover') }} <br>
 		Purchase URL: {{ Form::text(('purchase_link')) }} <br>
 
